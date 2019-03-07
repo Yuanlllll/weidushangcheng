@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.recker.flybanner.FlyBanner xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_180"
+    android:id="@+id/fly_banner"
+    android:background="#fff"
+    android:orientation="vertical">
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/orange">
+
+        <ImageView
+            android:id="@+id/convenientBanner"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+             />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:background="#000"
+            android:alpha="0.3"/>
+    </RelativeLayout>-->
+</com.recker.flybanner.FlyBanner>

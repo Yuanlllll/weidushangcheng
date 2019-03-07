@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_background"
+    tools:context=".RegActivity">
+
+    <EditText
+        android:id="@+id/reg_edit_acc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_36"
+        android:layout_marginTop="@dimen/dp_180"
+        android:layout_marginRight="@dimen/dp_36"
+        android:drawableLeft="@mipmap/login_phone"
+        android:hint="@string/reg_edit_acc"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_16" />
+
+    <EditText
+        android:id="@+id/reg_edit_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_edit_acc"
+        android:layout_marginLeft="@dimen/dp_36"
+        android:layout_marginRight="@dimen/dp_36"
+        android:drawableLeft="@mipmap/reg_verify"
+        android:hint="@string/reg_edit_verify"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_16" />
+
+    <EditText
+        android:id="@+id/reg_edit_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_edit_verify"
+        android:layout_marginLeft="@dimen/dp_36"
+        android:layout_marginRight="@dimen/dp_36"
+        android:drawableLeft="@mipmap/login_lock"
+        android:drawableRight="@mipmap/login_eye"
+        android:hint="@string/reg_edit_pwd"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:id="@+id/reg_text_getverify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/reg_edit_verify"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/dp_61"
+        android:layout_marginRight="@dimen/dp_61"
+        android:text="@string/reg_text_getverify"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_10" />
+
+    <TextView
+        android:id="@+id/reg_text_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_edit_pwd"
+        android:layout_alignRight="@id/reg_edit_pwd"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="@string/reg_text_login"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_14" />
+
+    <Button
+        android:id="@+id/reg_btn_reg"
+        android:layout_width="@dimen/dp_280"
+        android:layout_height="@dimen/dp_40"
+        android:layout_alignLeft="@id/reg_edit_pwd"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_125"
+        android:background="@drawable/item_back_shape"
+        android:text="@string/reg_btn_reg"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/sp_18" />
+
+</RelativeLayout>

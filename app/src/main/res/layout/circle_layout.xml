@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_10">
+
+        <RelativeLayout
+            android:id="@+id/top_relativity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/circle_one_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="15dp"
+                android:src="@mipmap/ic_launcher_round" />
+
+            <TextView
+                android:id="@+id/circle_textone_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@+id/circle_one_img"
+                android:text="aaaa"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/circle_textone_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="15dp"
+                android:layout_marginLeft="6dp"
+                android:text="2018"
+                android:textColor="#666666"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/circle_textone_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_relativity"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="title"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/one_img1"
+            android:layout_width="@dimen/dp_300"
+            android:layout_height="@dimen/dp_200"
+            android:layout_below="@+id/circle_textone_title"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <com.zhuang.likeviewlibrary.LikeView
+            android:id="@+id/item01_like_view"
+            app:like_canCancel="true"
+            app:like_hasFly="false"
+            app:like_iconSize="18sp"
+            app:like_textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/one_img1"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

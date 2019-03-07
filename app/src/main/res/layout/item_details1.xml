@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item"
+    android:layout_marginTop="12dp">
+    
+    <com.recker.flybanner.FlyBanner
+        android:id="@+id/detail_fly_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_270"></com.recker.flybanner.FlyBanner>
+    
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <TextView
+           android:id="@+id/detail_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginRight="20dp"
+           android:layout_marginLeft="20dp"
+           android:textSize="@dimen/sp_12"
+           android:textColor="#666666"/>
+       <TextView
+           android:id="@+id/detail_describe"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginRight="20dp"
+           android:layout_marginLeft="@dimen/dp_5"
+           android:textSize="@dimen/sp_12"
+           android:textColor="#666666"/>
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/dp_10"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="重量"
+            android:textSize="@dimen/sp_12"
+            android:textColor="#666666"/>
+        <TextView
+            android:id="@+id/details_kg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+            android:textSize="@dimen/sp_12"
+            android:textColor="#666666"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="18dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="￥"
+            android:textSize="@dimen/sp_14"
+            android:textColor="#ff0000"/>
+        <TextView
+            android:id="@+id/details_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="4dp"
+            android:text="203"
+            android:textSize="@dimen/sp_14"
+            android:textColor="#ff0000"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#f6f6f6"/>
+    
+</LinearLayout>

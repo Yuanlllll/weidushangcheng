@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_back_shape">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/home_icon02"
+        android:layout_width="160dp"
+        android:layout_height="160dp" />
+
+    <TextView
+        android:id="@+id/home_text_title02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/home_icon02"
+        android:singleLine="true"
+        android:textSize="18sp"
+        android:text="title"/>
+
+    <TextView
+        android:id="@+id/home_text_price02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/home_icon02"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/home_icon02"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        android:text="价格"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

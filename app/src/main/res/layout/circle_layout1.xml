@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/dp_24"
+    android:background="@drawable/item_back_shape">
+
+    <RelativeLayout
+        android:id="@+id/top_relativity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/circle_icon1"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/dp_10"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/circle_text_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_toRightOf="@+id/circle_icon1"
+            android:text="aaaa"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/circle_text_time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/dp_15"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:text="2018"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_10" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/circle_text_title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_relativity"
+        android:layout_marginTop="@dimen/dp_10"
+        android:padding="@dimen/dp_10"
+        android:text="title"
+        android:textColor="#666666"
+        android:textSize="@dimen/sp_12" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/circle_recycler1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/circle_text_title1" />
+
+    <com.zhuang.likeviewlibrary.LikeView
+        android:id="@+id/circle_likeview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/circle_recycler1"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        app:like_canCancel="true"
+        app:like_hasFly="false"
+        app:like_iconSize="18sp"
+        app:like_textSize="12sp"/>
+
+
+</RelativeLayout>

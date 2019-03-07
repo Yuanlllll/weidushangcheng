@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_background"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/login_edit_acc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_36"
+        android:layout_marginTop="@dimen/dp_160"
+        android:layout_marginRight="@dimen/dp_36"
+        android:drawableLeft="@mipmap/login_phone"
+        android:hint="@string/login_edit_acc"
+        android:inputType="phone"
+        android:textSize="@dimen/sp_18" />
+
+    <EditText
+        android:id="@+id/login_edit_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_edit_acc"
+        android:layout_marginLeft="@dimen/dp_36"
+        android:layout_marginRight="@dimen/dp_36"
+        android:drawableLeft="@mipmap/login_lock"
+        android:hint="@string/login_edit_pwd"
+        android:inputType="textPassword"
+        android:textSize="@dimen/sp_18" />
+
+    <CheckBox
+        android:id="@+id/login_img_eye"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        android:layout_alignTop="@+id/login_edit_acc"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_51"
+        android:layout_marginEnd="@dimen/dp_45"
+        android:layout_marginRight="@dimen/dp_45"
+        android:background="@mipmap/login_eye" />
+
+    <TextView
+        android:id="@+id/login_text_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_edit_pwd"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_36"
+        android:text="@string/login_text_reg"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_14" />
+
+    <CheckBox
+        android:id="@+id/login_checkbox_remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_edit_pwd"
+        android:layout_marginLeft="@dimen/dp_36"
+        android:text="@string/login_checkbox_remember"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_14" />
+
+    <Button
+        android:id="@+id/login_btn_login"
+        android:layout_width="@dimen/dp_280"
+        android:layout_height="@dimen/dp_40"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_120"
+        android:background="@drawable/item_back_shape"
+        android:text="@string/login_btn_login"
+        android:textColor="@color/colorAccent" />
+
+</RelativeLayout>

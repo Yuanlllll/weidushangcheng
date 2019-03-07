@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/circle_text2_pl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:text="评论" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/circle_icon2_show1"
+        android:layout_width="@dimen/dp_140"
+        android:layout_height="@dimen/dp_140"
+        android:layout_below="@id/circle_text2_pl"
+        android:padding="@dimen/dp_10"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/circle_icon2_show2"
+        android:layout_width="@dimen/dp_140"
+        android:layout_height="@dimen/dp_140"
+        android:layout_below="@id/circle_text2_pl"
+        android:layout_toRightOf="@id/circle_icon2_show1"
+        android:padding="@dimen/dp_10"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/circle_icon2_show3"
+        android:layout_width="@dimen/dp_140"
+        android:layout_height="@dimen/dp_140"
+        android:layout_below="@id/circle_text2_pl"
+        android:layout_toRightOf="@id/circle_icon2_show2"
+        android:padding="@dimen/dp_10"
+        android:src="@mipmap/ic_launcher_round" />
+
+</RelativeLayout>
